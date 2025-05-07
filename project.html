@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <div class="background">
+        <div class="bg1"></div>
+
+
+        <div class="popup">
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+
+            </nav>
+
+            <header class="header">
+                <div class="header1">
+                    <a href="#"><h1>All</h1></a>
+                </div>
+                <div class="header1">
+                    <a href="#"><h1>Registration Forms</h1></a>
+                </div>
+                <div class="header1">
+                    <a href="#"><h1>Clone</h1></a>
+                </div>
+                <div class="header1">
+                    <a href="#"><h1>Responsive</h1></a>
+                </div>
+                
+                
+            </header>
+            <section class="product">
+                <p>My Projects</p>
+                <h1>Building projects from scratch </h1>
+                <div class="parent">
+                    <div class="div1">
+                        <img src="./prj1.png" alt="Project Screenshot">
+                        <h2>Udemy Clone – Course Website</h2>
+                        <p> Tech Stack :
+                            HTML5,CSS3 (Flexbox, Grid),Google Fonts,Font Awesome</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1"> <img src="./prj2 (1).png" alt="Project Screenshot">
+                        <h2>Student Registration Form</h2>
+                        <p> Tech Stack :
+                            HTML5
+
+                            CSS3
+
+                            JavaScript, Form Table</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1"> <img src="./prj2 (2).png" alt="Project Screenshot">
+                        <h2>Reestar Hotel </h2>
+                        <p> Tech Stack :
+                            HTML5,CSS3 Elegant and User-Friendly Booking Websitee</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1"> <img src="./Screenshot 2025-05-03 124241.png" alt="Project Screenshot">
+                        <h2>GreenDen Plant Shop</h2>
+                        <p> Tech Stack :
+                            HTML5
+
+                            Tailwind CSS (for styling and responsive layout)
+
+                            JavaScrip</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1"> <img src="./Screenshot 2025-05-03 131219.png" alt="Project Screenshot">
+                        <h2>Nostra Dress</h2>
+                        <p> Tech Stack :
+                            HTML5
+
+                            CSS3
+
+                            JavaScript (for form validation and dynamic behavior)</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1"><img src="./Screenshot 2025-05-03 131431.png" alt="Project Screenshot">
+                        <h2>TripAdvisor Clone</h2>
+                        <p>
+                            TripAdvisor Clone is a travel platform where users can explore destinations.</p>
+                        <button class="viewbtn">Click Here To View <i class="fa-solid fa-eye"></i></button>
+                    </div>
+                    <div class="div1">7</div>
+                    <div class="div1">8</div>
+                    <div class="div1">9</div>
+                    <div class="div1">10</div>
+                    <div class="div1">11</div>
+                    <div class="div1">12</div>
+                    <div class="div1">13</div>
+                    <div class="div1">14</div>
+                    <div class="div1">15</div>
+
+                </div>
+
+            </section>
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+    <script>
+        const headerItems = document.querySelectorAll('.header1');
+    
+        headerItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Remove 'selected' from all
+                headerItems.forEach(i => i.classList.remove('selected'));
+    
+                // Add 'selected' to clicked one
+                item.classList.add('selected');
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
