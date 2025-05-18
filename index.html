@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="icon" href="people.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,29 +34,16 @@
 
         </nav>
 
-        <!-- <section class="sbar">
-            <p><i class="fa-solid fa-bars"></i></i></p>
-        </section> -->
-        <aside class="slider" id="slider">
-            <p id="closebtn">X</p>
-            <nav class="navbar2">
-                <a href="#">Home</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-        </aside>
         <header class="header">
             <section class="header__1">
                 <div class="pfbg">
-                    <img class="profile" src="./profilr.jpeg" height="400px"  alt="profile image">
+                    <img class="profile" src="./profilr.jpeg" height="400px" alt="profile image">
                 </div>
             </section>
             <section class="header__2">
                 <h2>Hi, I am <span class="name">Naveen</span></h2>
-                <h1>MERN Stack Developer</h1>
+                <h1 id="typingText"></h1>
+
                 <p>A passionate Full-Stack Web Developer with experience in building dynamic, scalable, and responsive
                     web applications. I specialize in JavaScript, React, Node.js, and MongoDB, and I'm dedicated to
                     creating seamless digital experiences from front to back. Whether it's crafting beautiful UI or
@@ -64,38 +52,42 @@
                     <a href="https://www.linkedin.com/in/naveenvenugopal2000/"><i
                             class="fa-brands fa-linkedin-in fa-xl"></i></a>
                     <a href="https://github.com/Naveenvenu23"><i class="fa-brands fa-github fa-xl"></i></a>
-                    
+
                     <a href="https://www.instagram.com/imnaveen_nv?igsh=ZDloYXp5N24ycGhn"><i
                             class="fa-brands fa-twitter fa-xl"></i></a>
-                    <button class="contactbtn" aria-label="Contact me">Contact Me</button>
+                    <a href="#contact" class="contactbtn" aria-label="Contact me">Contact Me</a>
+
 
                 </div>
             </section>
             <div class="resume">
-               <a href="#"> <p>View<br>
-                Resume</p></a>
+                <a href="./resume.html">
+                    <p>View<br>
+                        Resume</p>
+                </a>
 
             </div>
         </header>
 
-        <section class="stickeyfooter">
-            <div class="sf__1">
-                <h1>0</h1>
-                <p>Years of Experience</p>
-            </div>
-            <div class="sf__2">
-                <h1>10+</h1>
-                <p>Projects</p>
-            </div>
-            <div class="sf__3">
-                <h1>0</h1>
-                <p>Certifications</p>
-            </div>
-            <div class="sf__4">
-                <h1>100+</h1>
-                <p>Reviews</p>
-            </div>
-        </section>
+<section class="stickeyfooter">
+    <div class="sf__1">
+        <h1 data-target="0">0</h1>
+        <p>Years of Experience</p>
+    </div>
+    <div class="sf__2">
+        <h1 data-target="10">0</h1>
+        <p>Projects</p>
+    </div>
+    <div class="sf__3">
+        <h1 data-target="0">0</h1>
+        <p>Certifications</p>
+    </div>
+    <div class="sf__4">
+        <h1 data-target="100">0</h1>
+        <p>Reviews</p>
+    </div>
+</section>
+
 
         <section class="skills" id="skills">
             <div class="skills1">
@@ -142,14 +134,15 @@
                 <h1>Explore My Popular Projects</h1>
             </div>
 
-                 <div class="prj2">
+            <div class="prj2">
                 <div class="prj2__1">
                     <img src="./iphone.png" height="350" width="650" alt="GreenDen project">
                 </div>
                 <div class="prj2__2">
                     <p>Product Design</p>
                     <h1>Apple Iphone 16 plus - clone</h1>
-                    <p>I developed a high-fidelity clone of the Apple iPhone 16 product webpage using modern frontend technologies. 
+                    <p>I developed a high-fidelity clone of the Apple iPhone 16 product webpage using modern frontend
+                        technologies.
                         planet.</p>
                     <a href="https://naveenvenu23.github.io/greendenweb/" target="_blank">
                         <button class="prjbtn">
@@ -214,10 +207,10 @@
 
             <a href="./project.html">
                 <button class="viewbtn">
-                  View More <i class="fa-solid fa-arrow-right-long"></i>
+                    View More <i class="fa-solid fa-arrow-right-long"></i>
                 </button>
-              </a>
-              
+            </a>
+
         </section>
         <section class="about" id="education">
             <div class="about1">
@@ -272,19 +265,20 @@
                 <h4 class="form-title">Love to hear from you!</h4>
                 <form class="contact-form">
                     <div class="form-row">
-                        <input type="text" required placeholder="Name" />
+                        <input type="text" name="user_name" required placeholder="Name" />
                     </div>
                     <div class="form-row two-column">
-                        <input type="email" required placeholder="Email" />
-                        <input type="text" required placeholder="Phone Number" />
+                        <input type="email" name="user_email" required placeholder="Email" />
+                        <input type="text" name="user_phone" required placeholder="Phone Number" />
                     </div>
                     <div class="form-row">
-                        <textarea required placeholder="Message"></textarea>
+                        <textarea name="message" required placeholder="Message"></textarea>
                     </div>
                     <div class="form-row">
                         <button class="submit-btn" type="submit">Send Message</button>
                     </div>
                 </form>
+
             </div>
 
         </section>
@@ -299,12 +293,15 @@
                 <a href="https://www.linkedin.com/in/naveenvenugopal2000/"><i
                         class="fa-brands fa-linkedin-in fa-xl"></i></a>
                 <a href="https://github.com/Naveenvenu23"><i class="fa-brands fa-github fa-xl"></i></a>
-               
+
                 <a href="https://www.instagram.com/imnaveen_nv?igsh=ZDloYXp5N24ycGhn"><i
                         class="fa-brands fa-twitter fa-xl"></i></a>
-
+            </div>
         </footer>
     </div>
+    <!-- Load EmailJS CDN first -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Then load your external script -->
     <script src="index.js"></script>
 </body>
 
