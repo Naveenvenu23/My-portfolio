@@ -115,27 +115,14 @@ body {
 .profile{
     border-radius: 50%;
     position: relative;
-    margin-left: 100px;
+    margin-left: 20px;
     border-right: solid #04f695 2px;
-
-
-}
-.pfbg {
-  height: 410px;
-  width: 500px;
-  margin-left: -80px; /* slightly less negative for balance */
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-
-  /* Smooth dark gradient with subtle vibrancy */
-  background: linear-gradient(135deg, #0b132b 0%, #1c2541 70%, #3a86ff 100%);
-
-  /* Soft glow shadow with blue tint */
+     background: linear-gradient(135deg, #0b132b 0%, #1c2541 70%, #3a86ff 100%);
   box-shadow: 0 8px 25px rgba(58, 134, 255, 0.6), 0 0 30px rgba(58, 134, 255, 0.4);
 
   border: 3px solid #3a86ff;
-  position: relative;
-  overflow: hidden; /* keep rounded edges clean */
+
+
 }
 
 .name{
@@ -563,8 +550,10 @@ textarea {
     gap: 10px;
 }
 
-.footer1 p {
+.footer1 p{
     color: #999;
+    color: inherit;
+    text-decoration: none;
 }
 
 .footer2 {
