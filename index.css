@@ -115,7 +115,7 @@ body {
 .profile{
     border-radius: 50%;
     position: relative;
-    margin-left: 20px;
+    margin-left: 25px;
     border-right: solid #04f695 2px;
      background: linear-gradient(135deg, #0b132b 0%, #1c2541 70%, #3a86ff 100%);
   box-shadow: 0 8px 25px rgba(58, 134, 255, 0.6), 0 0 30px rgba(58, 134, 255, 0.4);
