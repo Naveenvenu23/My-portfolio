@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 const element = document.getElementById("typingText");
-  const texts = ["MERN Stack Developer", "Full Stack Developer"];
+  const texts = ["MERN Stack Developer", "Front End Developer"];
   let textIndex = 0;
   let charIndex = 0;
   let isDeleting = false;
